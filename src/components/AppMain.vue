@@ -13,7 +13,13 @@ export default {
 
 <template>
     <main>
-        MAIN
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    Carta
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 

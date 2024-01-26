@@ -12,8 +12,10 @@ export default {
 </script>
 
 <template>
-    <header>
-        HEADER
+    <header>    
+        <h1>
+            Yu-Gi-Oh Api
+        </h1>
     </header>
 </template>
 
