@@ -12,10 +12,17 @@ export default {
 </script>
 
 <template>
-    <header>    
-        <h1>
-            Yu-Gi-Oh Api
-        </h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Yu-Gi-Oh Api
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
     </header>
 </template>
 

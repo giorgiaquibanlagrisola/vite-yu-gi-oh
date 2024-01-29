@@ -7,7 +7,8 @@ import axios from 'axios';
 export default {
     data() {
         return {
-
+            mainUrl:'https://db.ygoprodeck.com/api/v7/cardinfo.php',
+            cards: []
         };
     },
     components: {
@@ -18,22 +19,26 @@ export default {
     methods: {
 
     },
-    mounted() {
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php').then((response) => {
-            console.log(response)
+    created() {
+        axios
+            .get(this.mainUrl)
+            .then((response) => {
+                console.log(response.data.data);
+                this.cards = response.data.data;
+                console.log(this.cards);
         });
-    }
+    },
 }
 </script>
 
 <template>
 
-
     <AppHeader />
 
-    <AppMain />
+    <AppMain :allCards="cards" />
 
     <AppFooter />
+
 </template>
 
 <style lang="scss">
