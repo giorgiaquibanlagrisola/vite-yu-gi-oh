@@ -21,8 +21,8 @@ export default {
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-2" v-for="(card, i) in allCards" 
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-2 col-md-6" v-for="(card, i) in allCards" 
                 :key="i">
                     <div class="singleCard">
                         <div>
